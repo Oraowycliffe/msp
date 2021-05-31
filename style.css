@@ -1,0 +1,199 @@
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+h4{
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 10px;
+}
+a{
+    /*text-decoration: none;*/
+    color: #307158;
+}
+strong{
+    color: #307158;
+}
+a:hover{
+    text-decoration: underline;
+}
+.small{
+    font-size: 80%;
+    text-align: center;
+}
+.placeholder{
+    font-family: 'Poppins';
+    font-size: 0.4rem;
+}
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    height: 300px;
+}
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    background:  url('images/background.png');
+    background-size: cover;
+}
+.left .copy {
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing:antialised;
+    -moz-osx-font-smoothing:grayscale;
+}
+.left p{
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+.right .copy{
+    color: black;
+    text-align: center;
+}
+.right .copy p{
+    margin:1.5em 0;
+    font-size: 0.875rem;
+    font-family: 'Poppins';
+}
+.right .copy p a{
+    color: #307158;
+
+}
+.right form{
+    width: 328px;;
+}
+form input[type="number"],
+form input[type="text"],
+form input[type="email"],
+form input [type="number"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    padding: 0.87rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+::placeholder { 
+  font-size: 0.7rem;
+  font-family: 'Poppins';
+  opacity: 1; 
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-family: 'Poppins';
+}
+input-container.password{
+    position: relative;
+}
+input-container .password i{
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+/* checbox styling */
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
+}
+.checkbox-container input:checked~ .checkmark{
+    background-color: rgba(48,113,88,255);
+    border: 1px solid rgba(48,113,88,255);
+}
+.checkmark{
+    position: absolute;
+    width: 24px;
+    height: 24px;;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: -4px;
+    left: 0;
+}
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked~.checkmark:after{
+    display: block;
+}
+.checkbox-container .checkmark:after{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    transform: rotate(45deg);
+}
+.signup-btn{
+    display: block;
+    width: 100%;
+    background: #307158;
+    color: white;
+    padding: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.signup-btn:hover{
+    background: #a8a8a8;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* /media queries/ */
+@media screen and (min-width: 900px){
+    .split-screen{
+        flex-direction: row;
+        height: 100%;
+    }
+    .left, .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
+
+.inner-terms h4{
+    padding: 30px;
+}
