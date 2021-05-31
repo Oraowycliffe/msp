@@ -2,7 +2,7 @@
 <?php
 //connection variables
 
-online db
+//online db
 $servername = "remotemysql.com";
 $database = "9lrVvHDYR9";
 $username = "9lrVvHDYR9";
