@@ -58,8 +58,8 @@
                     submit
                 </button>
                 <section class="copy legal">
-                    <p><span class="small"> By Filling this form, you agree to accept our <br><a href="terms.php">privacy Policy</a> &amp;
-                        <a href="terms.php">Terms of service</a></span></p>
+                    <p><span class="small"> By Filling this form, you agree to accept our <br><a href="https://drive.google.com/file/d/1tvoUIVfsQrSBjNnvxCBbxwLbtOOH-7QJ/view?usp=sharing">privacy Policy</a> &amp;
+                        <a href="https://drive.google.com/file/d/1tvoUIVfsQrSBjNnvxCBbxwLbtOOH-7QJ/view?usp=sharing">Terms of service</a></span></p>
                 </section>
             </form>
         </div>
