@@ -32,7 +32,7 @@ echo "";
 $sql = "INSERT INTO user_kin (code, id_number, telephone, kin, kin_telephone) VALUES ('$code', '$id_number','$telephone', '$kin','$kin_telephone')";
 
 if (mysqli_query($conn, $sql)) {
-      echo "New record created successfully";
+      echo "Your record has been captured successfully";
 } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
